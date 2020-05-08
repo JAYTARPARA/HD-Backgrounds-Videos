@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -38,6 +39,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   bool _selectedblack = false;
   bool _selectedbrown = false;
   ScrollController _controller;
+  InterstitialAd _interstitialAd;
 
   @override
   void initState() {
@@ -45,6 +47,33 @@ class _CategoryScreenState extends State<CategoryScreen> {
     _controller = ScrollController();
     _controller.addListener(_scrollListener);
     getWallpaper(widget.category.toLowerCase(), color);
+    _loadInterstitialAds();
+  }
+
+  _loadInterstitialAds() {
+    FirebaseAdMob.instance.initialize(
+      appId: Common().admobAppId,
+    );
+
+    InterstitialAd createInterstitialAd() {
+      return InterstitialAd(
+        // adUnitId: InterstitialAd.testAdUnitId,
+        adUnitId: Common().interstitialAdId,
+        // targetingInfo: targetingInfo,
+        listener: (MobileAdEvent event) {
+          print("InterstitialAd event $event");
+        },
+      );
+    }
+
+    _interstitialAd = createInterstitialAd()..load();
+    _interstitialAd?.show();
+  }
+
+  @override
+  void dispose() {
+    _interstitialAd?.dispose();
+    super.dispose();
   }
 
   _scrollListener() {

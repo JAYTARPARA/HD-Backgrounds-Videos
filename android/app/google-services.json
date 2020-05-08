@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "877934063360",
+    "firebase_url": "https://hd-backgrounds-n-videos.firebaseio.com",
+    "project_id": "hd-backgrounds-n-videos",
+    "storage_bucket": "hd-backgrounds-n-videos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877934063360:android:5a5b5fbd645abcf0e4cde5",
+        "android_client_info": {
+          "package_name": "app.jaytarpara.pixabayhdwallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877934063360-51dc39oi8131k64d6ko5p4htqq5knl02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn2sAhAWoDGHP5tkDynGt61djEbZLgtYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877934063360-51dc39oi8131k64d6ko5p4htqq5knl02.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

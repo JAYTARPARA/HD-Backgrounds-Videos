@@ -74,8 +74,8 @@ class _SidebarState extends State<Sidebar> {
             ),
             onTap: () {
               Share.share(
-                'Download HD Wallpapers Application \r\n PLAYSTORE_URL',
-                subject: 'Whatsapp Widget',
+                'Download HD Backgrounds & Videos Application \r\n https://bit.ly/HDWallpaperNVideos',
+                subject: 'HD Backgrounds & Videos',
               );
             },
           ),
@@ -110,8 +110,8 @@ class _SidebarState extends State<Sidebar> {
               FontAwesomeIcons.googlePlay,
             ),
             onTap: () async {
-              print("HD Video");
-              const url = 'https://play.google.com/store/apps/dev?id=7435506917924983096';
+              const url =
+                  'https://play.google.com/store/apps/dev?id=7435506917924983096';
               if (await canLaunch(url)) {
                 await launch(url);
               } else {

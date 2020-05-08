@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class Common {
+  var admobAppId = "ca-app-pub-4800441463353851~8464656374";
+  var interstitialAdId = "ca-app-pub-4800441463353851/1707676339";
   var response, apiSendURL;
   var resultError;
   var apiURL =

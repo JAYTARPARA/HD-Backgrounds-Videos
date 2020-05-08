@@ -11,7 +11,7 @@ description: HD Backgrounds & Videos - One stop to get HD wallpapers for mobile 
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.2+2
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -45,6 +45,8 @@ dependencies:
   store_redirect: ^1.0.2
   share: ^0.6.3+6
   url_launcher: ^5.4.5
+  firebase_admob: ^0.9.3+2
+  firebase_messaging: ^6.0.13
 
 dev_dependencies:
   flutter_test:

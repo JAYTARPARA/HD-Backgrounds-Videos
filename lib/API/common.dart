@@ -57,7 +57,7 @@ class Common {
 
   getSearchVideo(search, page) async {
     search.replaceAll(" ", "+");
-    apiSendURL = '$videosApiURL&q=$search&per_page=$limit&page=$page';
+    apiSendURL = '$videosApiURL&q=$search&per_page=$limitVideos&page=$page';
     try {
       response = await http.get(apiSendURL);
       return jsonDecode(response.body);

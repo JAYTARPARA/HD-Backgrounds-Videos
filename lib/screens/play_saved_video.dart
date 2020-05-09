@@ -59,8 +59,8 @@ class _PlaySavedVideoState extends State<PlaySavedVideo> {
         },
         child: FaIcon(
           _controller.value.isPlaying
-              ? FontAwesomeIcons.pauseCircle
-              : FontAwesomeIcons.playCircle,
+              ? FontAwesomeIcons.pause
+              : FontAwesomeIcons.play,
           color: Colors.white,
         ),
       ),

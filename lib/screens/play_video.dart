@@ -413,8 +413,8 @@ class _PlayVideoState extends State<PlayVideo> {
         },
         child: FaIcon(
           _controller.value.isPlaying
-              ? FontAwesomeIcons.pauseCircle
-              : FontAwesomeIcons.playCircle,
+              ? FontAwesomeIcons.pause
+              : FontAwesomeIcons.play,
           color: Colors.white,
         ),
       ),

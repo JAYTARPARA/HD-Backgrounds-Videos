@@ -134,7 +134,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       key: _scaffoldKey,
       body: BackdropScaffold(
-        backLayer: Sidebar(),
+        backLayer: Sidebar("wallpapers"),
         title: Center(
           child: Text(
             'HD Wallpaper Hub',
@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         actions: <Widget>[
-          Saved(),
+          Saved("wallpaper"),
         ],
         // AppBar(
         //   title: Text(
@@ -302,7 +302,7 @@ class _HomeState extends State<Home> {
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            "Search Categories",
+                            "Search wallpaper by Categories",
                             style: TextStyle(
                               fontSize: 18.0,
                               fontWeight: FontWeight.bold,

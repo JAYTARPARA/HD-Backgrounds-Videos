@@ -1,4 +1,4 @@
-package app.jaytarpara.pixabayhdwallpapers
+package com.jaytarpara.pixabayhdwallpapers
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

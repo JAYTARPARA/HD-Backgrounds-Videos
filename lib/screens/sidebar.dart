@@ -106,7 +106,7 @@ class _SidebarState extends State<Sidebar> {
             ),
             onTap: () {
               StoreRedirect.redirect(
-                androidAppId: "app.jaytarpara.pixabayhdwallpapers",
+                androidAppId: "com.jaytarpara.pixabayhdwallpapers",
               );
             },
           ),
